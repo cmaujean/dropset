@@ -41,4 +41,8 @@ describe Dropset do
       Dropset.calc(5.1)
     }.should raise_error(ArgumentError)
   end
+  
+  it "returns 1 for an input of 1" do
+    Dropset.calc(1).should == 1
+  end
 end
